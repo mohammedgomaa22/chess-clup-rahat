@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>
+        دار الشطرنج | CHESS CLUP RAHAT
+    </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#91502d',
+                        secondary: '#eac687',
+                    }
+                },
+                container: {
+                    padding: {
+                        DEFAULT: '1rem',
+                        sm: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem',
+                    },
+                    center: true,
+                },
+            }
+        }
+    </script>
+    <!-- Faveicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.webp" type="image/x-icon">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+    
+    <main>
+
+        <!-- Start Hero Section -->
+        <section class="hero-section relative h-screen flex items-center justify-center overflow-hidden">
+            <!-- Background Video -->
+            <div class="absolute inset-0 z-0">
+                <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+                    <source src="./assets/videos/video.mp4" type="video/mp4">
+                    <!-- Fallback for browsers that don't support video -->
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Video Overlay for better text readability -->
+                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            </div>
+        
+            <!-- Hero Content -->
+            <div class="container relative z-10 text-center text-white px-4">
+                <!-- Main Title -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight" data-aos="fade-down"
+                    data-aos-duration="1000" data-aos-delay="300">
+                    الدار داركم، أهلاً بكم!
+                </h1>
+        
+                <!-- Description Text -->
+                <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed opacity-90" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="600">
+                    الأطفال الذين يلعبون شطرنج يُظهرون تفوقًا في الدراسة، تحسّنًا في التركيز، ونضجًا في التعامل مع التحديات. دع
+                    ابنك يكتشف طاقاته الكامنة على الرقعة!
+                </p>
+        
+                <!-- Call to Action Button -->
+                <div class="mt-10" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="900">
+                    <a href="#booking"
+                        class="inline-block bg-primary hover:bg-opacity-90 text-white font-bold text-lg md:text-xl px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-lg">
+                        <i class="fas fa-chess ml-3"></i>
+                        احجز لابنك درس تجريبي
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Scroll Down Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10" data-aos="fade-in" data-aos-duration="1000"
+                data-aos-delay="1200">
+                <div class="animate-bounce">
+                    <i class="fas fa-chevron-down text-white text-2xl opacity-70"></i>
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- Start About Us Section -->
+        <section id="about-us" class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+                    <!-- Content Section -->
+                    <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000">
+                        <!-- Section Title -->
+                        <div class="mb-8">
+                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+                                من نحن؟
+                            </h2>
+                            <div class="w-20 h-1 bg-primary rounded-full"></div>
+                        </div>
+        
+                        <!-- Main Content -->
+                        <div class="space-y-6">
+                            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                                <h3 class="text-xl font-bold text-primary mb-4 flex items-center">
+                                    <i class="fas fa-chess-king ml-3 text-secondary"></i>
+                                    دار الشطرنج – رهط
+                                </h3>
+                                <p class="text-gray-700 leading-relaxed text-lg">
+                                    هو أول نادٍ من نوعه في المجتمع البدوي بالنقب، تأسس عام
+                                    <span class="font-bold text-primary">2024</span>،
+                                    ويهدف إلى تعزيز التفكير المنهجي، التركيز، والإبداع لدى الأطفال واليافعين من خلال لعبة
+                                    الشطرنج.
+                                </p>
+                            </div>
+        
+                            <div class="bg-secondary bg-opacity-10 p-6 rounded-xl border-r-4 border-primary">
+                                <div class="flex items-start">
+                                    <i class="fas fa-lightbulb text-primary text-2xl mt-1 ml-4"></i>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-gray-800 mb-2">رؤيتنا</h4>
+                                        <p class="text-gray-700 leading-relaxed">
+                                            نحن نؤمن أن الشطرنج ليس مجرد لعبة، بل
+                                            <span class="font-bold text-primary">أداة تربوية متكاملة</span>
+                                            لصناعة جيل قيادي مفكر.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Statistics or Features -->
+                        <div class="grid grid-cols-3 gap-4 mt-8">
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                                <i class="fas fa-users text-primary text-2xl mb-2"></i>
+                                <p class="text-sm text-gray-600 font-medium">مجتمع بدوي</p>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                                <i class="fas fa-brain text-secondary text-2xl mb-2"></i>
+                                <p class="text-sm text-gray-600 font-medium">تفكير منهجي</p>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="600">
+                                <i class="fas fa-trophy text-primary text-2xl mb-2"></i>
+                                <p class="text-sm text-gray-600 font-medium">جيل قيادي</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Image Section -->
+                    <div class="order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="relative">
+                            <!-- Main Image Container -->
+                            <div class="relative overflow-hidden rounded-2xl shadow-lg">
+                                <img src="./assets/images/11.webp" alt="دار الشطرنج رهط - تعليم الشطرنج للأطفال"
+                                    class="w-full h-80 lg:h-96 object-cover">
+        
+                                <!-- Image Overlay with Year Badge -->
+                                <div class="absolute top-6 right-6">
+                                    <div class="bg-primary text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                                        تأسس 2024
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Decorative Elements -->
+                            <div class="absolute -top-4 -right-4 w-20 h-20 bg-secondary bg-opacity-20 rounded-full -z-10"></div>
+                            <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-primary bg-opacity-10 rounded-full -z-10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Us Section -->
+    
+        <!-- Start Features Section -->
+        <section id="features" class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container">
+        
+                <!-- Section Header -->
+                <div class="text-center mb-16" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                        سواء كان طفلك يخطو أولى خطواته على الرقعة
+                        <span class="text-primary block mt-4">أو يمتلك خبرة سابقة</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        توفر دار الشطرنج دورات لكافة المستويات
+                    </p>
+                    <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-6"></div>
+                </div>
+        
+                <!-- Features Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+                    <!-- Feature 1: Educational Methodology -->
+                    <div class="group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div
+                            class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl border border-gray-100 h-full transition-all duration-300 hover:border-primary hover:border-opacity-30">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-14 h-14 bg-primary bg-opacity-10 rounded-xl flex items-center justify-center ml-4">
+                                    <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">منهجية تربوية منظمة</h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                نعمل وفق خطة تعليمية مبنية على مراحل – من الأساسيات حتى الاستراتيجيات المتقدمة، مع متابعة دقيقة
+                                لتقدّم كل طالب.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Feature 2: Professional Team -->
+                    <div class="group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div
+                            class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl border border-gray-100 h-full transition-all duration-300 hover:border-secondary hover:border-opacity-50">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-14 h-14 bg-secondary bg-opacity-20 rounded-xl flex items-center justify-center ml-4">
+                                    <i class="fas fa-user-tie text-secondary text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">فريق مؤهل ومحترف</h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                مدربونا حاصلون على تدريب أكاديمي وتجربة ميدانية، ويجيدون العمل مع الأطفال بحس تربوي، صبر،
+                                ومرونة.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Feature 3: Safe Learning Environment -->
+                    <div class="group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div
+                            class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl border border-gray-100 h-full transition-all duration-300 hover:border-primary hover:border-opacity-30">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-14 h-14 bg-primary bg-opacity-10 rounded-xl flex items-center justify-center ml-4">
+                                    <i class="fas fa-shield-alt text-primary text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">بيئة تعليمية آمنة ومحفزة</h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                نوفّر مساحة تحترم كل طفل، تعزّز ثقته بنفسه، وتدفعه للتفكير بحرية، دون خوف من الخطأ.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Feature 4: Values Integration -->
+                    <div class="group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <div
+                            class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl border border-gray-100 h-full transition-all duration-300 hover:border-secondary hover:border-opacity-50">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-14 h-14 bg-secondary bg-opacity-20 rounded-xl flex items-center justify-center ml-4">
+                                    <i class="fas fa-heart text-secondary text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">دمج القيم والسلوك</h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                نُدرّب الأطفال على احترام الآخر، ضبط النفس، روح رياضية، والعمل الجماعي – من خلال الشطرنج.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Feature 5: Diverse Activities -->
+                    <div class="group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <div
+                            class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl border border-gray-100 h-full transition-all duration-300 hover:border-primary hover:border-opacity-30">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-14 h-14 bg-primary bg-opacity-10 rounded-xl flex items-center justify-center ml-4">
+                                    <i class="fas fa-trophy text-primary text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">نشاطات متنوّعة</h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                إلى جانب اللقاءات التعليمية، ننظم بطولات داخلية، تحديات، وأمسيات ثقافية، ونحضر الطلاب للمشاركة
+                                في بطولات قطرية.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Feature 6: Long-term Community Vision -->
+                    <div class="group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                        <div
+                            class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl border border-gray-100 h-full transition-all duration-300 hover:border-secondary hover:border-opacity-50">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-14 h-14 bg-secondary bg-opacity-20 rounded-xl flex items-center justify-center ml-4">
+                                    <i class="fas fa-lightbulb text-secondary text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">رؤية مجتمعية بعيدة المدى</h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                نحن نبني جيلاً من المفكرين في قلب المجتمع البدوي، ونضع حجر أساس لتعليم جديد يُقدّر الذكاء،
+                                التخطيط، والتفوق الهادئ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Bottom CTA -->
+                <div class="mt-16" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <div
+                        class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-10 lg:p-12 text-center text-white relative overflow-hidden">
+                        <!-- Background Pattern -->
+                        <div class="absolute inset-0 opacity-10">
+                            <div class="absolute top-4 right-4">
+                                <i class="fas fa-chess-queen text-6xl"></i>
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <i class="fas fa-chess-bishop text-4xl"></i>
+                            </div>
+                            <div class="absolute top-1/2 left-1/4 transform -translate-y-1/2">
+                                <i class="fas fa-chess-knight text-3xl"></i>
+                            </div>
+                        </div>
+        
+                        <!-- Content -->
+                        <div class="relative z-10">
+                            <h3 class="text-3xl lg:text-4xl font-bold mb-4">
+                                ابدأ رحلة طفلك معنا اليوم
+                            </h3>
+                            <p class="text-xl lg:text-2xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+                                دع طفلك يكتشف قدراته الحقيقية ويطور مهاراته في بيئة تعليمية محترفة ومحفزة
+                            </p>
+        
+                            <!-- CTA Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                                <a href="#booking"
+                                    class="bg-white text-primary font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:bg-gray-50 inline-flex items-center">
+                                    <i class="fas fa-chess ml-3"></i>
+                                    احجز درس تجريبي مجاني
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Features Section -->
+
+        <!-- Start Testimonials Section -->
+        <section id="testimonials" class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container mx-auto">
+        
+                <!-- Section Header -->
+                <div class="text-center mb-16" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                        قالوا عنا
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        آراء أولياء الأمور الذين شاهدوا التطور الحقيقي في أطفالهم
+                    </p>
+                    <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-6"></div>
+                </div>
+        
+                <!-- Testimonials Grid -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+        
+                    <!-- Testimonial 1 - Hamza's Mother -->
+                    <div class="group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative h-full">
+                            <!-- Quote Icon -->
+                            <div class="absolute -top-4 right-6">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                    <i class="fas fa-quote-right text-white text-xl"></i>
+                                </div>
+                            </div>
+        
+                            <!-- Quote Content -->
+                            <div class="pt-6">
+                                <blockquote class="text-gray-700 text-lg leading-relaxed mb-6 italic">
+                                    "ابني رجع من اللقاء الأول مبتسمًا، وقال لي:
+                                    <span class="text-primary font-bold">'أحسّ نفسي ذكي'</span>
+                                    – شكراً لكم!"
+                                </blockquote>
+        
+                                <!-- Author Info -->
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center ml-4">
+                                        <i class="fas fa-user text-secondary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">أم حمزة</h4>
+                                        <p class="text-gray-500 text-sm">والدة طالب</p>
+                                    </div>
+                                </div>
+        
+                                <!-- Rating Stars -->
+                                <div class="flex items-center mt-4 pt-4 border-t border-gray-100">
+                                    <div class="flex text-yellow-400 ml-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-500 text-sm">تقييم ممتاز</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Testimonial 2 - Nada's Father -->
+                    <div class="group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative h-full">
+                            <!-- Quote Icon -->
+                            <div class="absolute -top-4 right-6">
+                                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                                    <i class="fas fa-quote-right text-white text-xl"></i>
+                                </div>
+                            </div>
+        
+                            <!-- Quote Content -->
+                            <div class="pt-6">
+                                <blockquote class="text-gray-700 text-lg leading-relaxed mb-6 italic">
+                                    "لم أكن أتوقع هذا التحول السريع في شخصية ابنتي،
+                                    <span class="text-secondary font-bold">الشطرنج غيّرنا!</span>"
+                                </blockquote>
+        
+                                <!-- Author Info -->
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center ml-4">
+                                        <i class="fas fa-user text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">والد ندى</h4>
+                                        <p class="text-gray-500 text-sm">والد طالبة</p>
+                                    </div>
+                                </div>
+        
+                                <!-- Rating Stars -->
+                                <div class="flex items-center mt-4 pt-4 border-t border-gray-100">
+                                    <div class="flex text-yellow-400 ml-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-500 text-sm">تقييم ممتاز</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Statistics Section -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="600">
+                    <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-3xl font-bold text-primary mb-2">95%</div>
+                        <p class="text-gray-600 text-sm">رضا أولياء الأمور</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-3xl font-bold text-secondary mb-2">100+</div>
+                        <p class="text-gray-600 text-sm">طالب مسجل</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-3xl font-bold text-primary mb-2">5★</div>
+                        <p class="text-gray-600 text-sm">متوسط التقييم</p>
+                    </div>
+                    <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-3xl font-bold text-secondary mb-2">2024</div>
+                        <p class="text-gray-600 text-sm">سنة التأسيس</p>
+                    </div>
+                </div>
+        
+                <!-- Call to Action -->
+                <div class="text-center mt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    <p class="text-lg text-gray-600 mb-6">انضم إلى عائلة دار الشطرنج واكتشف الفرق بنفسك</p>
+                    <a href="#booking"
+                        class="inline-flex items-center bg-primary text-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:bg-opacity-90">
+                        <i class="fas fa-chess ml-3"></i>
+                        ابدأ التجربة المجانية
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials Section -->
+
+    </main>
+    
+    <footer>
+        <div class="container"></div>
+    </footer>
+
+
+    <!-- AOS Animation Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- MAIN JS File -->
+    <script src="./src/js/main.js"></script>
+
+</body>
+</html>
