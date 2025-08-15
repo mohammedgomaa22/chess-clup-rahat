@@ -4,7 +4,6 @@ AOS.init({
     once: true,
 });
 
-
 // Preloader Logic
 document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.getElementById('preloader');
@@ -38,4 +37,20 @@ document.addEventListener('DOMContentLoaded', function() {
             hidePreloader();
         }
     }, 5000);
+});
+
+
+// Video Play Button Functionality (Future)
+document.addEventListener('DOMContentLoaded', function () {
+    const playBtn = document.querySelector('.video-play-btn');
+
+    if (playBtn) {
+        playBtn.addEventListener('click', function () {
+            // Future: Replace with actual video player
+            console.log('Video will be implemented here');
+
+            // Placeholder action - could show a modal or redirect
+            alert('الفيديو سيتم إضافته قريباً!');
+        });
+    }
 });
