@@ -89,10 +89,10 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         // Navigation arrows
-        navigation: {
-            nextEl: '.gallery-swiper .swiper-button-next',
-            prevEl: '.gallery-swiper .swiper-button-prev',
-        },
+        // navigation: {
+        //     nextEl: '.gallery-swiper .swiper-button-next',
+        //     prevEl: '.gallery-swiper .swiper-button-prev',
+        // },
 
         // Pagination
         pagination: {
@@ -106,12 +106,4 @@ document.addEventListener('DOMContentLoaded', function () {
         speed: 800,
     });
 
-    // Gallery Image Click Handler (for lightbox functionality)
-    const galleryImages = document.querySelectorAll('.gallery-swiper .swiper-slide img');
-    galleryImages.forEach(img => {
-        img.addEventListener('click', function () {
-            // Here you can add lightbox functionality if needed
-            console.log('Image clicked:', this.src);
-        });
-    });
 });
