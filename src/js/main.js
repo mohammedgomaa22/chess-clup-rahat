@@ -54,3 +54,64 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+// <!-- Gallery Swiper Initialization -->
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Gallery Swiper
+    const gallerySwiper = new Swiper('.gallery-swiper .swiper', {
+        // Swiper Parameters
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1280: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            }
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.gallery-swiper .swiper-button-next',
+            prevEl: '.gallery-swiper .swiper-button-prev',
+        },
+
+        // Pagination
+        pagination: {
+            el: '.gallery-swiper .swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+        },
+
+        // Effects
+        effect: 'slide',
+        speed: 800,
+    });
+
+    // Gallery Image Click Handler (for lightbox functionality)
+    const galleryImages = document.querySelectorAll('.gallery-swiper .swiper-slide img');
+    galleryImages.forEach(img => {
+        img.addEventListener('click', function () {
+            // Here you can add lightbox functionality if needed
+            console.log('Image clicked:', this.src);
+        });
+    });
+});

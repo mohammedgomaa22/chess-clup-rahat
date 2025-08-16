@@ -71,3 +71,63 @@ body {
   visibility: hidden;
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
+
+
+/* Gallery Swiper */
+.gallery-swiper .swiper {
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.gallery-swiper .swiper-button-next,
+.gallery-swiper .swiper-button-prev {
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.gallery-swiper .swiper-button-next:hover,
+.gallery-swiper .swiper-button-prev:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.gallery-swiper .swiper-button-next {
+  right: -25px;
+}
+
+.gallery-swiper .swiper-button-prev {
+  left: -25px;
+}
+
+.gallery-swiper .swiper-pagination {
+  bottom: 20px;
+}
+
+.gallery-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #91502d;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.gallery-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #eac687;
+  transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  .gallery-swiper .swiper-button-next,
+  .gallery-swiper .swiper-button-prev {
+    display: none;
+  }
+}
