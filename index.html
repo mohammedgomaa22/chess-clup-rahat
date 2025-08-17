@@ -116,7 +116,7 @@
         <!-- End Hero Section -->
 
         <!-- Start About Us Section -->
-        <section id="about-us" class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <section class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
             <div class="container">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
         
@@ -190,7 +190,7 @@
         <!-- End About Us Section -->
     
         <!-- Start Features Section -->
-        <section id="features" class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <section class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
             <div class="container">
         
                 <!-- Section Header -->
@@ -356,7 +356,7 @@
         <!-- End Features Section -->
 
         <!-- Start Testimonials Section -->
-        <section id="testimonials" class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <section class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
             <div class="container mx-auto">
         
                 <!-- Section Header -->
@@ -466,6 +466,53 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative h-full">
+                            <!-- Quote Icon -->
+                            <div class="absolute -top-4 right-6">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                    <i class="fas fa-quote-right text-white text-xl"></i>
+                                </div>
+                            </div>
+                    
+                            <!-- Quote Content -->
+                            <div class="pt-6">
+                                <blockquote class="text-gray-700 text-lg leading-relaxed mb-6">
+                                    "أود أن أعبر عن خالص امتناني لدار الشطرنج على الدورة الرائعة التي شارك فيها أبنائي.
+                                    لقد التحقوا بدورة "الأساس"، والتي تميزت بمزيج رائع بين الإبداع والتفكير المنطقي، حيث لاحظت كيف بدأوا يطورون طريقة
+                                    تفكيرهم وتحليلهم للمواقف ليس فقط في الشطرنج، بل حتى في الحياة اليومية.
+                                    أبنائي استمتعوا بالدورة كثيرًا، وكانوا متحمسين لحضور كل لقاء، وهذا بالنسبة لي أكبر دليل على نجاح التجربة.
+                                    المدربون كانوا محترفين، وأسلوبهم ممتع ومشجع، مما ساعد على غرس حب اللعبة في نفوس الأطفال.
+                                </blockquote>
+                    
+                                <!-- Author Info -->
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center ml-4">
+                                        <i class="fas fa-user text-secondary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">ام محمد القرناوي</h4>
+                                        <p class="text-gray-500 text-sm">والدة طالب</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Rating Stars -->
+                                <div class="flex items-center mt-4 pt-4 border-t border-gray-100">
+                                    <div class="flex text-yellow-400 ml-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-500 text-sm">تقييم ممتاز</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
         
                 <!-- Statistics Section -->
@@ -503,7 +550,7 @@
         <!-- End Testimonials Section -->
         
         <!-- Start Gallery Section -->
-        <section id="gallery" class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <section class="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
             <div class="container">
         
                 <!-- Section Header -->
@@ -590,8 +637,7 @@
         <!-- End Gallery Section -->        
         
         <!-- Start Video Section -->
-        <section id="video" class="py-16 lg:py-24 bg-gray-900 relative overflow-hidden">
-            <!-- Background Pattern -->
+        <!-- <section id="video" class="py-16 lg:py-24 bg-gray-900 relative overflow-hidden">
             <div class="absolute inset-0 opacity-5">
                 <div class="grid grid-cols-8 gap-4 h-full">
                     <div class="flex flex-col justify-around">
@@ -611,7 +657,6 @@
         
             <div class="container mx-auto relative z-10">
         
-                <!-- Section Header -->
                 <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="1000">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
                         شاهد تجربة أطفالنا
@@ -621,33 +666,26 @@
                     </p>
                 </div>
         
-                <!-- Video Container -->
                 <div class="max-w-4xl mx-auto" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl">
         
-                        <!-- Video Placeholder/Thumbnail -->
                         <div
                             class="relative bg-gradient-to-br from-gray-800 to-gray-700 aspect-video flex items-center justify-center">
-                            <!-- Thumbnail Image (Future) -->
                             <img src="./assets/images/10.webp" alt="فيديو دار الشطرنج - رهط"
                                 class="w-full h-full object-cover absolute inset-0">
         
-                            <!-- Play Button Overlay -->
                             <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                                 <button class="video-play-btn group relative">
-                                    <!-- Play Button Circle -->
                                     <div
                                         class="w-20 h-20 md:w-24 md:h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
                                         <i
                                             class="fas fa-play text-gray-800 group-hover:text-white text-2xl md:text-3xl mr-1"></i>
                                     </div>
         
-                                    <!-- Pulse Animation -->
                                     <div class="absolute inset-0 bg-white rounded-full animate-ping opacity-30"></div>
                                 </button>
                             </div>
         
-                            <!-- Video Duration Badge -->
                             <div
                                 class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-sm px-3 py-1 rounded-full">
                                 <i class="fas fa-clock ml-1"></i>
@@ -658,7 +696,6 @@
                     </div>
                 </div>
         
-                <!-- Additional Info Cards -->
                 <div class="grid md:grid-cols-3 gap-6 mt-12">
                     <div class="text-center p-6 bg-white bg-opacity-10 rounded-xl backdrop-blur-sm" data-aos="fade-up"
                         data-aos-delay="500">
@@ -680,7 +717,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Video Section -->
 
         <!-- Start Contact Section -->
@@ -839,10 +876,9 @@
     <footer class="bg-gray-900 text-white">
 
         <!-- Main Footer Content -->
-        <div class="container py-12">
+        <!-- <div class="container py-12">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                <!-- Logo and Description -->
                 <div class="lg:col-span-2" data-aos="fade-up" data-aos-duration="800">
                     <div class="flex items-center mb-6">
                         <img src="./assets/images/logo-edits.png" alt="دار الشطرنج رهط" class="w-16 h-16 ml-4">
@@ -857,7 +893,6 @@
                     </p>
                 </div>
 
-                <!-- Quick Links -->
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <h4 class="text-lg font-bold text-white mb-6">روابط سريعة</h4>
                     <ul class="space-y-3">
@@ -892,7 +927,6 @@
                     </ul>
                 </div>
 
-                <!-- Contact Info -->
                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <h4 class="text-lg font-bold text-white mb-6">تواصل معنا</h4>
                     <div class="space-y-4">
@@ -929,7 +963,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Bottom Bar -->
         <div class="border-t border-gray-800">
